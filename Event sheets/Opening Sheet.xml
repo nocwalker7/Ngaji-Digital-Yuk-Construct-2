@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Opening Sheet</name>
+    <events>
+        <event-block sid="304931748115365">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="661080965937529" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="192241904876339" type="c">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="3" name="Set wait time" sid="524875814783679" type="c">
+                    <param id="0" name="Wait time">1</param>
+                </action>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="778683461835234" type="c">
+                    <param id="0" name="Fade-out time">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="997463356637142">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="135578332704429" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="601575887107261" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="530726524439503" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

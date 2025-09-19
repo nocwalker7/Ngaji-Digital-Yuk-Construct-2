@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Bermain Sheet</name>
+    <events>
+        <event-block sid="720311053116142">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="953259342749337" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="611741242710287">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="218577546925356" type="System">
+                            <param id="0" name="Object">backbutton</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="299347823964246" type="System">
+                            <param id="0" name="Object">halawalbutton</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="976123009012218" type="System">
+                            <param id="0" name="Object">tebaksurahbutton</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="175769522038764" type="System">
+                            <param id="0" name="Object">dragndropbutton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="640675619801402" type="backbutton">
+                            <param id="0" name="Instance variable">SaveXButton</param>
+                            <param id="1" name="Value">Self.Width</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="108486482810216" type="backbutton">
+                            <param id="0" name="Instance variable">SaveYButton</param>
+                            <param id="1" name="Value">Self.Height</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="450526086310391" type="halawalbutton">
+                            <param id="0" name="Instance variable">SaveXButton</param>
+                            <param id="1" name="Value">Self.Width</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="217695119897381" type="halawalbutton">
+                            <param id="0" name="Instance variable">SaveYButton</param>
+                            <param id="1" name="Value">Self.Height</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="372888081766561" type="dragndropbutton">
+                            <param id="0" name="Instance variable">SaveXbutton</param>
+                            <param id="1" name="Value">Self.Width</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="460743321766411" type="dragndropbutton">
+                            <param id="0" name="Instance variable">SaveYButton</param>
+                            <param id="1" name="Value">Self.Height</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="763831560581509" type="tebaksurahbutton">
+                            <param id="0" name="Instance variable">SaveXButton</param>
+                            <param id="1" name="Value">Self.Width</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="286112546142920" type="tebaksurahbutton">
+                            <param id="0" name="Instance variable">SaveYButton</param>
+                            <param id="1" name="Value">Self.Height</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="311756176964064">
+            <conditions>
+                <condition id="17" name="On tap object" sid="243154882391142" type="Touch">
+                    <param id="0" name="Object">backbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="686789305152296" type="backbutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="126945038424839" type="backbutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveXButton+25</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="156366222703359" type="backbutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveYButton+10</param>
+                </action>
+                <action id="-16" name="Wait" sid="421198031173984" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="361128574577562" type="backbutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="837090372884227" type="backbutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveXButton</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="691329344812370" type="backbutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveYButton</param>
+                </action>
+                <action id="-16" name="Wait" sid="197746758323319" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="905439701896340" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="411521200122510">
+            <conditions>
+                <condition id="17" name="On tap object" sid="783931002071283" type="Touch">
+                    <param id="0" name="Object">halawalbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="328114803917123" type="halawalbutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="817584235299235" type="halawalbutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveXButton+25</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="991936650794069" type="halawalbutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveYButton+10</param>
+                </action>
+                <action id="-16" name="Wait" sid="673779758722540" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="987486453903515" type="halawalbutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="699612838220032" type="halawalbutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveXButton</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="352341074021396" type="halawalbutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveYButton</param>
+                </action>
+                <action id="-16" name="Wait" sid="471245999935283" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="566378258856370" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="456566252777097">
+            <conditions>
+                <condition id="17" name="On tap object" sid="211991263104501" type="Touch">
+                    <param id="0" name="Object">dragndropbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="764223905228519" type="dragndropbutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="228406526642986" type="dragndropbutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveXButton+25</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="155868655596753" type="dragndropbutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveYButton+10</param>
+                </action>
+                <action id="-16" name="Wait" sid="733447129496615" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="614912548854215" type="dragndropbutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="769516866570216" type="dragndropbutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveXButton</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="373779492994647" type="dragndropbutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveYButton</param>
+                </action>
+                <action id="-16" name="Wait" sid="785416126724605" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="107412122188360" type="System">
+                    <param id="0" name="Layout">DragnDrop</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="102810104521820">
+            <conditions>
+                <condition id="17" name="On tap object" sid="827931395698624" type="Touch">
+                    <param id="0" name="Object">tebaksurahbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="391878688375615" type="tebaksurahbutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="480968206079495" type="tebaksurahbutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveXButton+25</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="998375807738757" type="tebaksurahbutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveYButton+10</param>
+                </action>
+                <action id="-16" name="Wait" sid="772284695280894" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="154237589352432" type="tebaksurahbutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="998443161791303" type="tebaksurahbutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveXButton</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="268887352465282" type="tebaksurahbutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveYButton</param>
+                </action>
+                <action id="-16" name="Wait" sid="165223901597347" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="483639097928146" type="System">
+                    <param id="0" name="Layout">QuizSurah</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

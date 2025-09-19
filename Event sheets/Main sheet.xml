@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Main sheet</name>
+    <events>
+        <include>Global Sound Sheet</include>
+        <variable constant="0" name="scene_now" sid="951072810076467" static="0" type="number">0</variable>
+        <event-block sid="919102892924783">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="794629146503926" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="395796583710012">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="917994240645691" type="System">
+                            <param id="0" name="Object">bermainbutton</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="674183149030792" type="System">
+                            <param id="0" name="Object">closebutton</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="820311590421926" type="System">
+                            <param id="0" name="Object">soundbutton</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="700727381123511" type="System">
+                            <param id="0" name="Object">belajarbutton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="306609002291101" type="bermainbutton">
+                            <param id="0" name="Instance variable">SaveXButton</param>
+                            <param id="1" name="Value">Self.Width</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="470235359802249" type="bermainbutton">
+                            <param id="0" name="Instance variable">SaveYButton</param>
+                            <param id="1" name="Value">Self.Height</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="786125372669861" type="closebutton">
+                            <param id="0" name="Instance variable">SaveX</param>
+                            <param id="1" name="Value">Self.Width</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="843259986200170" type="closebutton">
+                            <param id="0" name="Instance variable">SaveY</param>
+                            <param id="1" name="Value">Self.Height</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="417351561144257" type="soundbutton">
+                            <param id="0" name="Instance variable">SaveXButton</param>
+                            <param id="1" name="Value">Self.Width</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="300207988799162" type="soundbutton">
+                            <param id="0" name="Instance variable">SaveYButton</param>
+                            <param id="1" name="Value">Self.Height</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="372794084240363" type="belajarbutton">
+                            <param id="0" name="Instance variable">SaveXButton</param>
+                            <param id="1" name="Value">Self.Width</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="600706266699859" type="belajarbutton">
+                            <param id="0" name="Instance variable">SaveYButton</param>
+                            <param id="1" name="Value">Self.Height</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Sound</comment>
+        <event-block sid="495496782243523">
+            <conditions>
+                <condition id="17" name="On tap object" sid="398410039811007" type="Touch">
+                    <param id="0" name="Object">soundbutton</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Sound ON</comment>
+                <event-block sid="452816573156381">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="306957403019536" type="System">
+                            <param id="0" name="Variable">opensong</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="331559294348748" type="soundbutton">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="610008677040758" type="soundbutton">
+                            <param id="0" name="Target is">4</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.SaveXButton+25</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="102844186919410" type="soundbutton">
+                            <param id="0" name="Target is">5</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.SaveYButton+25</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="664481194849636" type="System">
+                            <param id="0" name="Variable">opensong</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="628341581746568" type="soundbutton">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="729438208499450" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="345240677063493" type="soundbutton">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="181988232169414" type="soundbutton">
+                            <param id="0" name="Target is">4</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.SaveXButton</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="307285122065039" type="soundbutton">
+                            <param id="0" name="Target is">5</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.SaveYButton</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="330817751112472" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Sound OFF</comment>
+                <event-block sid="768528833093542">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="953586647170995" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="339729888891752" type="soundbutton">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="984337454952677" type="soundbutton">
+                            <param id="0" name="Target is">4</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.SaveXButton+25</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="792626556941984" type="soundbutton">
+                            <param id="0" name="Target is">5</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.SaveYButton+25</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="577830882737322" type="System">
+                            <param id="0" name="Variable">opensong</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="930457878511285" type="soundbutton">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="390867112945930" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="625936221631809" type="soundbutton">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="341035923834341" type="soundbutton">
+                            <param id="0" name="Target is">4</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.SaveXButton</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="445810721041045" type="soundbutton">
+                            <param id="0" name="Target is">5</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.SaveYButton</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="449686863124588" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>bermain button</comment>
+        <event-block sid="980662403982301">
+            <conditions>
+                <condition id="17" name="On tap object" sid="540496570386636" type="Touch">
+                    <param id="0" name="Object">bermainbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="421476538303105" type="bermainbutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="389210295139037" type="bermainbutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveXButton+25</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="882451565363406" type="bermainbutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveYButton+10</param>
+                </action>
+                <action id="-16" name="Wait" sid="900151834562251" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="811182834903795" type="bermainbutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="810225463287947" type="bermainbutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveXButton</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="858805989161879" type="bermainbutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveYButton</param>
+                </action>
+                <action id="-16" name="Wait" sid="386553286491277" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="432128290983682" type="System">
+                    <param id="0" name="Layout">Bermain</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>belajar button</comment>
+        <event-block sid="171506563822249">
+            <conditions>
+                <condition id="17" name="On tap object" sid="605719043725145" type="Touch">
+                    <param id="0" name="Object">belajarbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="576408664474320" type="belajarbutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="825552246899935" type="belajarbutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveXButton+25</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="878581588775896" type="belajarbutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveYButton+10</param>
+                </action>
+                <action id="-16" name="Wait" sid="531346721606251" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="507257277882918" type="belajarbutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="888199340932568" type="belajarbutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveXButton</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="386739537817181" type="belajarbutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveYButton</param>
+                </action>
+                <action id="-16" name="Wait" sid="504930828314005" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="175322185115074" type="System">
+                    <param id="0" name="Layout">Belajar</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>tutup button</comment>
+        <event-block sid="711106955460623">
+            <conditions>
+                <condition id="17" name="On tap object" sid="505529166167404" type="Touch">
+                    <param id="0" name="Object">closebutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="978033525085676" type="closebutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="240256526171758" type="closebutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveX+25</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="442511681122993" type="closebutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveY+25</param>
+                </action>
+                <action id="-16" name="Wait" sid="175299859393187" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="806017750756136" type="closebutton">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="285259904307598" type="closebutton">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveX</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="117698907336089" type="closebutton">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.SaveY</param>
+                </action>
+                <action id="-16" name="Wait" sid="245067812899464" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="1" name="Close" sid="419468876074643" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="753768680459754">
+            <conditions>
+                <condition id="0" name="On function" sid="596015669408915" type="Function">
+                    <param id="0" name="Name">&quot;level scene&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="752242163386148" type="System">
+                    <param id="0" name="Layout">&quot;Scene&quot;&amp;scene_now</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

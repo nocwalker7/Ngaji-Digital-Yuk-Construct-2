@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Belajar Sheet</name>
+    <events>
+        <event-block sid="378346713191347">
+            <conditions>
+                <condition id="17" name="On tap object" sid="303823047118350" type="Touch">
+                    <param id="0" name="Object">backbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="645216976559223" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="894213832551778" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="885262805019948">
+            <conditions>
+                <condition id="17" name="On tap object" sid="878634270513697" type="Touch">
+                    <param id="0" name="Object">halawalbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="997240387739196" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="709144744550018" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="557604032273559">
+            <conditions>
+                <condition id="17" name="On tap object" sid="684632433072828" type="Touch">
+                    <param id="0" name="Object">Hurufhijaiyahbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="787819147885091" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="791857000889376" type="System">
+                    <param id="0" name="Layout">HurufHijaiyah</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="167194443453414">
+            <conditions>
+                <condition id="17" name="On tap object" sid="687308600892499" type="Touch">
+                    <param id="0" name="Object">Hurufhijaiyahbutton2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="873747464980279" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="641918908198789" type="System">
+                    <param id="0" name="Layout">Surah</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

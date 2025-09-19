@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Surah Sheet</name>
+    <events>
+        <variable constant="0" name="surah" sid="528741646870960" static="0" type="number">0</variable>
+        <event-block sid="691151929223318">
+            <conditions>
+                <condition id="0" name="On function" sid="931164782685464" type="Function">
+                    <param id="0" name="Name">&quot;call-surah&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="818788564658161">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="292415221856070" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="384877423168168" type="Audio">
+                            <param id="0" name="Audio file">1.alfatihah</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="305818594075305">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="956948707133521" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="786072313127844" type="Audio">
+                            <param id="0" name="Audio file">2.annas</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="656815888669429">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="236089733741494" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="225374808238439" type="Audio">
+                            <param id="0" name="Audio file">3.alfalaq</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="594922392221098">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="915501431263317" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="226435951360869" type="Audio">
+                            <param id="0" name="Audio file">4.alikhlas</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="770388611147620">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="208285091700781" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="395967068031405" type="Audio">
+                            <param id="0" name="Audio file">5.allahab</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="672715654271091">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="382917682295569" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="900269698790705" type="Audio">
+                            <param id="0" name="Audio file">6.annasr</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="382084768694026">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="979199024198394" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="275850230138791" type="Audio">
+                            <param id="0" name="Audio file">7.alkafirun</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="334514470968222">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="360047333571107" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="884503831385132" type="Audio">
+                            <param id="0" name="Audio file">8.alkautsar</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="520700589039160">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="468782515457488" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="103588698893353" type="Audio">
+                            <param id="0" name="Audio file">9.almaun</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="227184904322738">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="304200136533259" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="333980340588117" type="Audio">
+                            <param id="0" name="Audio file">10.alquraisy</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="503272886959405">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="864540249150808" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="591623232765655" type="Audio">
+                            <param id="0" name="Audio file">11.alfiil</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="242114911825610">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="843541133197412" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="267618727343582" type="Audio">
+                            <param id="0" name="Audio file">12.alhumazah</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="357130871252071">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="902975660703799" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="630851585713101" type="Audio">
+                            <param id="0" name="Audio file">13.alasr</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="317085422358986">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="939572192150746" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="386764682152797" type="Audio">
+                            <param id="0" name="Audio file">14.attakatsur</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="860675957061416">
+            <conditions>
+                <condition id="0" name="On function" sid="638026824825242" type="Function">
+                    <param id="0" name="Name">&quot;change-text&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="257881365695557">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="926390168616224" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="295017930728858" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Al-Fatihah&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="828324790928408">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="636269838972554" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="467738119845784" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;An-Nas&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="314517263523845">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="934513565096095" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="488277171533040" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Al-Falaq&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="332460618881694">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="546516379041096" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="187847100262671" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Al-Ikhlas&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="293376679859153">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="601197585614947" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="462147073959000" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Al-Lahab&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="182870422242099">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="931530042685465" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="940506062643105" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;An-Nasr&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="242086880897268">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="898436848970831" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="693856801980521" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Al-Kafirun&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="143840383586978">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="399303720115699" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="351186122749274" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Al-Kautsar&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="864656400360765">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="516438914812924" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="660668934156801" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Al-Ma&apos;un&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="410175386293669">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="751120613403836" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="715111185674916" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Al-Quraisy&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="570105422940933">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="476388821440037" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="200706441524770" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Al-Fil&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="174902045965185">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="910865779149074" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="674280418084648" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Al-Humazah&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="640256151227475">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="294456919695195" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="460738886693361" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Al-&apos;Asr&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="119024384184179">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="541060035026690" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="868689111981665" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Al-Takatsur&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="206017979821721">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="452931493088532" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="197882804358603" type="Sprite4">
+                    <param id="0" name="Frame number">surah</param>
+                </action>
+                <action id="33" name="Stop all" sid="846845319774328" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="965125981097033">
+            <conditions>
+                <condition id="0" name="On function" sid="287655408419611" type="Function">
+                    <param id="0" name="Name">&quot;kiri&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="446239083947473">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="725528519480430" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="807837807528903" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Value">13</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="219793076500432">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="404282747334671" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="233119633656775" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="199079760976135">
+                    <conditions />
+                    <actions>
+                        <action id="5" name="Set frame" sid="440206824356328" type="Sprite4">
+                            <param id="0" name="Frame number">surah</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="446444541359914">
+            <conditions>
+                <condition id="0" name="On function" sid="528152846608157" type="Function">
+                    <param id="0" name="Name">&quot;kanan&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="664851844684157">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="594133949029573" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="931403464913236" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="119503810775332">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="988711971982461" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="275503830338718" type="System">
+                            <param id="0" name="Variable">surah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="808232519090831">
+                    <conditions />
+                    <actions>
+                        <action id="5" name="Set frame" sid="326040609928360" type="Sprite4">
+                            <param id="0" name="Frame number">surah</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="931190865914280" title="touch event">
+            <sub-events>
+                <event-block sid="896498623573983">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="136677718837710" type="Touch">
+                            <param id="0" name="Object">Play</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="274329335460183" type="Function">
+                            <param id="0" name="Name">&quot;call-surah&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="110358303497839">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="327440540614949" type="Touch">
+                            <param id="0" name="Object">LeftArrow</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="742010484337703" type="Function">
+                            <param id="0" name="Name">&quot;kiri&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="110053683111847" type="Function">
+                            <param id="0" name="Name">&quot;change-text&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="33" name="Stop all" sid="882636589278323" type="Audio" />
+                    </actions>
+                </event-block>
+                <event-block sid="932378866937302">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="619588495295891" type="Touch">
+                            <param id="0" name="Object">RightArrow</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="325101293548633" type="Function">
+                            <param id="0" name="Name">&quot;kanan&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="781739499670810" type="Function">
+                            <param id="0" name="Name">&quot;change-text&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="33" name="Stop all" sid="382077705261340" type="Audio" />
+                    </actions>
+                </event-block>
+                <event-block sid="274523601510159">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="123897754900711" type="Touch">
+                            <param id="0" name="Object">Sound</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="497704175385020" type="Audio" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="977328418364299">
+            <conditions>
+                <condition id="17" name="On tap object" sid="749921177811946" type="Touch">
+                    <param id="0" name="Object">backbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="737333227392365" type="Audio" />
+                <action id="-16" name="Wait" sid="709040241021039" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="351737494974931" type="System">
+                    <param id="0" name="Layout">Belajar</param>
+                </action>
+                <action id="0" name="Play" sid="996759568890916" type="Audio">
+                    <param id="0" name="Audio file">music (1)</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;opensong&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="599589478744008">
+            <conditions>
+                <condition id="17" name="On tap object" sid="483855878518811" type="Touch">
+                    <param id="0" name="Object">halawalbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="480056766998257" type="Audio" />
+                <action id="-16" name="Wait" sid="450905792982995" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="202049889217588" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+                <action id="0" name="Play" sid="353154580888259" type="Audio">
+                    <param id="0" name="Audio file">music (1)</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;opensong&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

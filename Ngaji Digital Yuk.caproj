@@ -1,0 +1,1141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Ngaji Digital Yuk</name>
+    <description>Game sederhana untuk anak-anak</description>
+    <version>1.0.0</version>
+    <author>Achmad Nur Syafii</author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id>com.tifunisnu.ngajidigitalyuk</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="overlay">Overlay</effect>
+        <effect author="Scirra" id="tint">Tint</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Opening</first-layout>
+    <use-loader-layout>1</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Nothing (not recommended)</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Text">
+            <object-type name="Text4" sid="679649979367198">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="hintdragndroptext" sid="416836038645506">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="surahText" sid="114268513326926">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text" sid="232811682505289">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="button">
+            <object-type name="backbutton" sid="403634407828182">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveXButton" sid="411309267779737" type="number" />
+                    <instance-variable name="SaveYButton" sid="356263033531797" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="942020855951021">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171984247895870" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Khusus\KembaliButton.png">
+                            <collision-poly>
+                                <point x="0.0204082" y="0.0776699" />
+                                <point x="0.5" y="0.0679612" />
+                                <point x="0.971939" y="0.106796" />
+                                <point x="0.977041" y="0.912621" />
+                                <point x="0.5" y="0.970874" />
+                                <point x="0.0178571" y="0.932039" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="closebutton" sid="408032535590386">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="222010872822115" type="number" />
+                    <instance-variable name="SaveY" sid="479816312466156" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="949592112758880">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="444179450177919" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Khusus\keluar_button.PNG">
+                            <collision-poly>
+                                <point x="0.189394" y="0.189394" />
+                                <point x="0.5" y="0.0606061" />
+                                <point x="0.810606" y="0.189394" />
+                                <point x="0.931818" y="0.5" />
+                                <point x="0.80303" y="0.80303" />
+                                <point x="0.5" y="0.931818" />
+                                <point x="0.189394" y="0.810606" />
+                                <point x="0.0606061" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="halawalbutton" sid="532197781020363">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveXButton" sid="321226810400010" type="number" />
+                    <instance-variable name="SaveYButton" sid="871481385091597" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="784859998550283">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802265326083557" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Khusus\HalAwalButton.png">
+                            <collision-poly>
+                                <point x="0.0152439" y="0.0471698" />
+                                <point x="0.5" y="0" />
+                                <point x="0.984756" y="0.0471698" />
+                                <point x="1" y="0.5" />
+                                <point x="0.984756" y="0.95283" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0152439" y="0.95283" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bermainbutton" sid="969670142557450">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveXButton" sid="894111909387040" type="number" />
+                    <instance-variable name="SaveYButton" sid="514699030517705" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="625225573615147">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="369147350348905" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Khusus\bermain_button.PNG">
+                            <collision-poly>
+                                <point x="0.0204082" y="0.0776699" />
+                                <point x="0.5" y="0.0679612" />
+                                <point x="0.971939" y="0.106796" />
+                                <point x="0.977041" y="0.912621" />
+                                <point x="0.5" y="0.970874" />
+                                <point x="0.0178571" y="0.932039" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="belajarbutton" sid="235111038990393">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveXButton" sid="913039898488037" type="number" />
+                    <instance-variable name="SaveYButton" sid="549998046250900" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="532154742848142">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="929956101704555" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Khusus\belajar_button.PNG">
+                            <collision-poly>
+                                <point x="0.0352697" y="0.119718" />
+                                <point x="0.96473" y="0.119718" />
+                                <point x="1" y="0.5" />
+                                <point x="0.960581" y="0.866197" />
+                                <point x="0.0394191" y="0.866197" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="soundbutton" sid="580868365776790">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveXButton" sid="188360635678826" type="number" />
+                    <instance-variable name="SaveYButton" sid="617867394031741" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="219594390563235">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346232886749661" speed="5">
+                        <frame duration="1" hotspotX="0.503401" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Sound (4).png" />
+                        <frame duration="1" hotspotX="0.503401" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Sound (1).png">
+                            <collision-poly>
+                                <point x="0.108844" y="0.108108" />
+                                <point x="0.496599" y="0.00675676" />
+                                <point x="0.891156" y="0.108108" />
+                                <point x="1" y="0.5" />
+                                <point x="0.897959" y="0.898649" />
+                                <point x="0.496599" y="0.993243" />
+                                <point x="0.102041" y="0.898649" />
+                                <point x="0.00680272" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="tentangbutton" sid="234346236698711">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveXButton" sid="658279036817707" type="number" />
+                    <instance-variable name="SaveYButton" sid="988503028165978" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="736903574939948">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="347792885351947" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Khusus\tentanggamebutton.PNG">
+                            <collision-poly>
+                                <point x="0.0103734" y="0.0471698" />
+                                <point x="0.5" y="0" />
+                                <point x="0.989627" y="0.0471698" />
+                                <point x="0.989627" y="0.95283" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0103734" y="0.95283" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="9patch" sid="291202724914569">
+                <plugin id="NinePatch" />
+                <texture original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\button_grey.png" />
+            </object-type>
+            <object-type name="9patch2" sid="558663846875268">
+                <plugin id="NinePatch" />
+                <texture original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\block_small.png" />
+            </object-type>
+            <object-type name="Hurufhijaiyahbutton2" sid="463387272855888">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="469351884833684" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Khusus\belajarquranbutton.PNG">
+                            <collision-poly>
+                                <point x="0.0352697" y="0.119718" />
+                                <point x="0.96473" y="0.119718" />
+                                <point x="1" y="0.5" />
+                                <point x="0.960581" y="0.866197" />
+                                <point x="0.0394191" y="0.866197" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Hurufhijaiyahbutton" sid="695538636824160">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="142587783027242" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Khusus\Hurufhijaiyahbutton.PNG">
+                            <collision-poly>
+                                <point x="0.0103734" y="0.0471698" />
+                                <point x="0.5" y="0" />
+                                <point x="0.989627" y="0.0471698" />
+                                <point x="0.989627" y="0.95283" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0103734" y="0.95283" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="dragndropbutton" sid="817356142579039">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveXbutton" sid="615205401621304" type="number" />
+                    <instance-variable name="SaveYButton" sid="969746572525106" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="261935770087068">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="576630955890784" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Khusus\dragndropbutton.PNG">
+                            <collision-poly>
+                                <point x="0.0103734" y="0.0471698" />
+                                <point x="0.5" y="0" />
+                                <point x="0.989627" y="0.0471698" />
+                                <point x="0.989627" y="0.95283" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0103734" y="0.95283" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="tebaksurahbutton" sid="293090995911971">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveXButton" sid="843039760590583" type="number" />
+                    <instance-variable name="SaveYButton" sid="618102925361681" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="654879489794731">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829188388182881" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Khusus\tebaksurahbutton.PNG">
+                            <collision-poly>
+                                <point x="0.0103734" y="0.0471698" />
+                                <point x="0.5" y="0" />
+                                <point x="0.989627" y="0.0471698" />
+                                <point x="0.989627" y="0.95283" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0103734" y="0.95283" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="LeftArrow" sid="925228935377676">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="555813287536077" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.503401" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\LeftArrow (1).png">
+                            <collision-poly>
+                                <point x="0.109589" y="0.108844" />
+                                <point x="0.5" y="0" />
+                                <point x="0.89726" y="0.102041" />
+                                <point x="1" y="0.496599" />
+                                <point x="0.89726" y="0.897959" />
+                                <point x="0.5" y="1" />
+                                <point x="0.10274" y="0.897959" />
+                                <point x="0" y="0.496599" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Play" sid="254483137213106">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="594423083615185" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Play (2).png">
+                            <collision-poly>
+                                <point x="0.109589" y="0.108108" />
+                                <point x="0.5" y="0.00675676" />
+                                <point x="0.890411" y="0.108108" />
+                                <point x="1" y="0.5" />
+                                <point x="0.89726" y="0.898649" />
+                                <point x="0.5" y="0.993243" />
+                                <point x="0.10274" y="0.898649" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RightArrow" sid="189320311293380">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="915367853486464" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\RightArrow (1).png">
+                            <collision-poly>
+                                <point x="0.109589" y="0.108108" />
+                                <point x="0.5" y="0.00675676" />
+                                <point x="0.890411" y="0.108108" />
+                                <point x="1" y="0.5" />
+                                <point x="0.89726" y="0.898649" />
+                                <point x="0.5" y="0.993243" />
+                                <point x="0.10274" y="0.898649" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sound" sid="113580010731602">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="110019973231388" speed="5">
+                        <frame duration="1" hotspotX="0.503401" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Sound (4).png">
+                            <collision-poly>
+                                <point x="0.108844" y="0.108108" />
+                                <point x="0.496599" y="0.00675676" />
+                                <point x="0.891156" y="0.108108" />
+                                <point x="0.993197" y="0.5" />
+                                <point x="0.897959" y="0.898649" />
+                                <point x="0.496599" y="0.993243" />
+                                <point x="0.102041" y="0.898649" />
+                                <point x="0.00680272" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="surah">
+            <object-type name="Sprite4" sid="535507398889574">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="14" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="965908538087347" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\01.alfatihah.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\02.annas.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\03.alfalaq.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\04.alikhlas.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\05.allahab.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\06.annasr.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\07.alkafirun.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\08.alkautsar.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\09.almaun.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\10.alquraisy.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\11.alfiil.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\12.alhumazah.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\13.alasr.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500618" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\ayah\14.attakatsur.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="system">
+            <object-folder name="Response">
+                <object-type name="Touch" sid="765198029446518">
+                    <plugin id="Touch" />
+                </object-type>
+                <object-type name="Mouse" sid="449176516959420">
+                    <plugin id="Mouse" />
+                </object-type>
+            </object-folder>
+            <object-type name="Audio" sid="779751829743251">
+                <plugin id="Audio" />
+            </object-type>
+            <object-type name="Browser" sid="916518336152965">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="Function" sid="546610385768575">
+                <plugin id="Function" />
+            </object-type>
+            <object-type global="1" name="Data_Surah" sid="929614219440681">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type name="WebStorage" sid="231710343406954">
+                <plugin id="WebStorage" />
+            </object-type>
+            <object-type global="1" name="dataacak" sid="256424933464419">
+                <plugin id="Arr" />
+            </object-type>
+        </object-folder>
+        <object-type name="mainbackground" sid="760818323428414">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="186350424897032" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Background main.PNG" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Blackscreen" sid="133987589428654">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="321925802770773">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156857866873106" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bgwhitein" sid="426913364395294">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="562947097869853">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595978520166468" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="853081457021572">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="727983701884563" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="container" sid="642219592887540">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Tint">
+                    <effect id="tint" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="771343361074032" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\container.png">
+                        <collision-poly>
+                            <point x="0.0255591" y="0.0372093" />
+                            <point x="0.5" y="0" />
+                            <point x="0.974441" y="0.0372093" />
+                            <point x="1" y="0.5" />
+                            <point x="0.974441" y="0.962791" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0255591" y="0.962791" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Huruf_container_putih" sid="136334859268411">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="id" sid="380719541532104" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="469653914432993">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="AnimPosition" sid="595388781122622">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="AnimSize" sid="145204557241623">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378267109682016" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#024.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#025.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#026.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#027.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Putih\#028.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pengalihID" sid="622251162057836">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="id" sid="870859806034339" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="670922530075292" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pengalihSoalRandom" sid="543530318934486">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ID" sid="108187194238587" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="180619617873460" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="levelCopy" sid="188727205717487">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="436474898728198" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\level copy.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="202321828124886">
+            <plugin id="TiledBg" />
+            <effects>
+                <effect-type name="Overlay">
+                    <effect id="overlay" />
+                </effect-type>
+            </effects>
+            <texture />
+        </object-type>
+        <object-type name="Sprite" sid="766445888273146">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="792197208410547" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Khusus\logo.png">
+                        <collision-poly>
+                            <point x="0.033" y="0.033" />
+                            <point x="0.5" y="0.095" />
+                            <point x="0.611" y="0.389" />
+                            <point x="0.8805" y="0.5" />
+                            <point x="0.5985" y="0.5985" />
+                            <point x="0.5" y="0.916" />
+                            <point x="0.07" y="0.93" />
+                            <point x="0.033" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bgwhiteout" sid="154500525802611">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="517214221458535">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="687692003291612" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="c" sid="512493957449224">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="291225260491701">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="266707443188628" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\c8.png">
+                        <collision-poly>
+                            <point x="0.0593692" y="0.15397" />
+                            <point x="0.5" y="0" />
+                            <point x="0.908009" y="0.238573" />
+                            <point x="0.999845" y="0.5" />
+                            <point x="0.908627" y="0.763031" />
+                            <point x="0.5" y="0.999599" />
+                            <point x="0.0589054" y="0.847233" />
+                            <point x="0.000154607" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="629615930627512">
+            <plugin id="SpriteFontPlus" />
+            <texture />
+        </object-type>
+        <object-type name="SpriteFont2" sid="778360927431396">
+            <plugin id="SpriteFontPlus" />
+            <instance-variables>
+                <instance-variable name="id" sid="350798765103051" type="number" />
+            </instance-variables>
+            <texture original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Sprites\Font\SpriteFont_BurbankBig_CondensedBlack_(72)_[1,1,1,1]_53x82.png" />
+        </object-type>
+        <object-type name="Check" sid="702224722299285">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="803112006985070">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="266968557203755" speed="5">
+                    <frame duration="1" hotspotX="0.503401" hotspotY="0.503401" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Check (1).png">
+                        <collision-poly>
+                            <point x="0.108844" y="0.108844" />
+                            <point x="0.496599" y="0" />
+                            <point x="0.891156" y="0.108844" />
+                            <point x="0.993197" y="0.496599" />
+                            <point x="0.897959" y="0.897959" />
+                            <point x="0.496599" y="1" />
+                            <point x="0.102041" y="0.897959" />
+                            <point x="0.00680272" y="0.496599" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cross" sid="369052252722675">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="614526605489676">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="362495335564866" speed="5">
+                    <frame duration="1" hotspotX="0.503401" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 6\Game Technology\Assets\Visual\Cross (3).png">
+                        <collision-poly>
+                            <point x="0.108844" y="0.108108" />
+                            <point x="0.496599" y="0.00675676" />
+                            <point x="0.891156" y="0.108108" />
+                            <point x="0.993197" y="0.5" />
+                            <point x="0.897959" y="0.898649" />
+                            <point x="0.496599" y="0.993243" />
+                            <point x="0.102041" y="0.898649" />
+                            <point x="0.00680272" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Huruf_container_hitam" sid="611660763028975">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881543374726511" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#024.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#025.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#026.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#027.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Syafii\Pribadi\Kuliah\Semester 4\Teknologi Multimedia\Project Sambung Ayat Al-Qur&apos;an\image\Image\Image\Hitam\#028.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Opening.xml</layout>
+        <layout>Main.xml</layout>
+        <layout>Belajar.xml</layout>
+        <layout>Surah.xml</layout>
+        <layout>HurufHijaiyah.xml</layout>
+        <layout>Bermain.xml</layout>
+        <layout>DragnDrop.xml</layout>
+        <layout>QuizSurah.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Main sheet.xml</event-sheet>
+        <event-sheet>DragnDrop Sheet.xml</event-sheet>
+        <event-sheet>Belajar Sheet.xml</event-sheet>
+        <event-sheet>Bermain Sheet.xml</event-sheet>
+        <event-sheet>Global Sound Sheet.xml</event-sheet>
+        <event-sheet>Opening Sheet.xml</event-sheet>
+        <event-sheet>QuizSurah Sheet.xml</event-sheet>
+        <event-sheet>Surah Sheet.xml</event-sheet>
+        <event-sheet>HurufHijaiyah Sheet.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="2" />
+        <global-instance type="Function" uid="3" />
+        <global-instance type="Touch" uid="27">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="28" />
+        <global-instance type="Audio" uid="16">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="WebStorage" uid="71" />
+    </global-instances>
+    <sounds-folder>
+        <sound-folder name="Surah">
+            <file name="1.alfatihah.ogg" />
+            <file name="14.attakatsur.ogg" />
+            <file name="13.alasr.ogg" />
+            <file name="12.alhumazah.ogg" />
+            <file name="11.alfiil.ogg" />
+            <file name="10.alquraisy.ogg" />
+            <file name="9.almaun.ogg" />
+            <file name="8.alkautsar.ogg" />
+            <file name="7.alkafirun.ogg" />
+            <file name="6.annasr.ogg" />
+            <file name="5.allahab.ogg" />
+            <file name="4.alikhlas.ogg" />
+            <file name="3.alfalaq.ogg" />
+            <file name="2.annas.ogg" />
+        </sound-folder>
+        <sound-folder name="Soundpack">
+            <file name="back_001.ogg" />
+            <file name="back_002.ogg" />
+            <file name="bong_001.ogg" />
+            <file name="cardFan2.ogg" />
+            <file name="cardOpenPackage1.ogg" />
+            <file name="cardFan1.ogg" />
+            <file name="cardPlace3.ogg" />
+            <file name="cardPlace2.ogg" />
+            <file name="cardPlace1.ogg" />
+            <file name="cardShove3.ogg" />
+            <file name="cardSlide2.ogg" />
+            <file name="back_004.ogg" />
+            <file name="cardShove2.ogg" />
+            <file name="cardShuffle.ogg" />
+            <file name="cardSlide5.ogg" />
+            <file name="cardPlace4.ogg" />
+            <file name="cardSlide8.ogg" />
+            <file name="cardSlide6.ogg" />
+            <file name="cardSlide7.ogg" />
+            <file name="cardSlide3.ogg" />
+            <file name="cardTakeOutPackage1.ogg" />
+            <file name="chipLay3.ogg" />
+            <file name="chipLay1.ogg" />
+            <file name="chipsCollide1.ogg" />
+            <file name="chipsHandle2.ogg" />
+            <file name="chipsHandle3.ogg" />
+            <file name="chipsHandle1.ogg" />
+            <file name="cardShove4.ogg" />
+            <file name="cardOpenPackage2.ogg" />
+            <file name="cardTakeOutPackage2.ogg" />
+            <file name="cardSlide4.ogg" />
+            <file name="chipsCollide4.ogg" />
+            <file name="chipsCollide3.ogg" />
+            <file name="chipsCollide2.ogg" />
+            <file name="back_003.ogg" />
+            <file name="click4.ogg" />
+            <file name="chipsStack3.ogg" />
+            <file name="chipsStack1.ogg" />
+            <file name="chipsStack4.ogg" />
+            <file name="click2.ogg" />
+            <file name="chipsStack5.ogg" />
+            <file name="chipsHandle6.ogg" />
+            <file name="click1.ogg" />
+            <file name="click5.ogg" />
+            <file name="click3.ogg" />
+            <file name="chipsStack2.ogg" />
+            <file name="click_002.ogg" />
+            <file name="chipsHandle5.ogg" />
+            <file name="click_001.ogg" />
+            <file name="chipsHandle4.ogg" />
+            <file name="chipLay2.ogg" />
+            <file name="confirmation_004.ogg" />
+            <file name="close_002.ogg" />
+            <file name="confirmation_001.ogg" />
+            <file name="confirmation_003.ogg" />
+            <file name="confirmation_002.ogg" />
+            <file name="dieGrab2.ogg" />
+            <file name="diceThrow1.ogg" />
+            <file name="diceThrow4.ogg" />
+            <file name="dieGrab1.ogg" />
+            <file name="dieThrow1.ogg" />
+            <file name="dieShuffle1.ogg" />
+            <file name="click_004.ogg" />
+            <file name="close_004.ogg" />
+            <file name="diceThrow2.ogg" />
+            <file name="dieShuffle2.ogg" />
+            <file name="close_001.ogg" />
+            <file name="dieThrow3.ogg" />
+            <file name="diceThrow3.ogg" />
+            <file name="error_001.ogg" />
+            <file name="drop_002.ogg" />
+            <file name="click_005.ogg" />
+            <file name="close_003.ogg" />
+            <file name="click_003.ogg" />
+            <file name="cardSlide1.ogg" />
+            <file name="drop_003.ogg" />
+            <file name="error_007.ogg" />
+            <file name="glass_002.ogg" />
+            <file name="error_002.ogg" />
+            <file name="error_005.ogg" />
+            <file name="error_004.ogg" />
+            <file name="drop_004.ogg" />
+            <file name="glass_001.ogg" />
+            <file name="error_006.ogg" />
+            <file name="glass_005.ogg" />
+            <file name="glass_006.ogg" />
+            <file name="glitch_001.ogg" />
+            <file name="glass_004.ogg" />
+            <file name="highDown.ogg" />
+            <file name="laser4.ogg" />
+            <file name="highUp.ogg" />
+            <file name="glass_003.ogg" />
+            <file name="laser1.ogg" />
+            <file name="laser2.ogg" />
+            <file name="dieThrow2.ogg" />
+            <file name="drop_001.ogg" />
+            <file name="dieShuffle3.ogg" />
+            <file name="error_008.ogg" />
+            <file name="chipsStack6.ogg" />
+            <file name="cardShove1.ogg" />
+            <file name="error_003.ogg" />
+            <file name="glitch_003.ogg" />
+            <file name="laser3.ogg" />
+            <file name="glitch_004.ogg" />
+            <file name="glitch_002.ogg" />
+            <file name="minimize_007.ogg" />
+            <file name="lowDown.ogg" />
+            <file name="laser7.ogg" />
+            <file name="maximize_001.ogg" />
+            <file name="laser6.ogg" />
+            <file name="laser9.ogg" />
+            <file name="maximize_003.ogg" />
+            <file name="lowThreeTone.ogg" />
+            <file name="maximize_002.ogg" />
+            <file name="maximize_008.ogg" />
+            <file name="maximize_009.ogg" />
+            <file name="minimize_001.ogg" />
+            <file name="maximize_007.ogg" />
+            <file name="minimize_003.ogg" />
+            <file name="mouserelease1.ogg" />
+            <file name="minimize_008.ogg" />
+            <file name="minimize_006.ogg" />
+            <file name="minimize_002.ogg" />
+            <file name="minimize_005.ogg" />
+            <file name="maximize_006.ogg" />
+            <file name="minimize_004.ogg" />
+            <file name="open_002.ogg" />
+            <file name="open_001.ogg" />
+            <file name="pepSound3.ogg" />
+            <file name="mouseclick1.ogg" />
+            <file name="maximize_004.ogg" />
+            <file name="open_003.ogg" />
+            <file name="open_004.ogg" />
+            <file name="minimize_009.ogg" />
+            <file name="lowRandom.ogg" />
+            <file name="pepSound1.ogg" />
+            <file name="maximize_005.ogg" />
+            <file name="pepSound4.ogg" />
+            <file name="pepSound5.ogg" />
+            <file name="laser5.ogg" />
+            <file name="laser8.ogg" />
+            <file name="phaseJump4.ogg" />
+            <file name="phaserDown3.ogg" />
+            <file name="phaseJump3.ogg" />
+            <file name="phaserDown2.ogg" />
+            <file name="phaserUp2.ogg" />
+            <file name="phaserUp3.ogg" />
+            <file name="phaserUp6.ogg" />
+            <file name="phaseJump1.ogg" />
+            <file name="phaserDown1.ogg" />
+            <file name="phaserUp4.ogg" />
+            <file name="phaserUp7.ogg" />
+            <file name="phaserUp1.ogg" />
+            <file name="pluck_001.ogg" />
+            <file name="rollover4.ogg" />
+            <file name="phaseJump5.ogg" />
+            <file name="phaseJump2.ogg" />
+            <file name="powerUp12.ogg" />
+            <file name="powerUp4.ogg" />
+            <file name="powerUp2.ogg" />
+            <file name="powerUp5.ogg" />
+            <file name="powerUp10.ogg" />
+            <file name="powerUp3.ogg" />
+            <file name="powerUp7.ogg" />
+            <file name="question_001.ogg" />
+            <file name="powerUp1.ogg" />
+            <file name="powerUp9.ogg" />
+            <file name="question_003.ogg" />
+            <file name="question_002.ogg" />
+            <file name="rollover1.ogg" />
+            <file name="powerUp11.ogg" />
+            <file name="pluck_002.ogg" />
+            <file name="powerUp8.ogg" />
+            <file name="rollover2.ogg" />
+            <file name="scratch_001.ogg" />
+            <file name="powerUp6.ogg" />
+            <file name="rollover6.ogg" />
+            <file name="rollover3.ogg" />
+            <file name="pepSound2.ogg" />
+            <file name="question_004.ogg" />
+            <file name="scratch_003.ogg" />
+            <file name="scratch_002.ogg" />
+            <file name="scratch_005.ogg" />
+            <file name="scroll_005.ogg" />
+            <file name="scroll_002.ogg" />
+            <file name="select_001.ogg" />
+            <file name="scroll_001.ogg" />
+            <file name="scratch_004.ogg" />
+            <file name="rollover5.ogg" />
+            <file name="scroll_004.ogg" />
+            <file name="scroll_003.ogg" />
+            <file name="select_002.ogg" />
+            <file name="switch16.ogg" />
+            <file name="select_005.ogg" />
+            <file name="select_006.ogg" />
+            <file name="spaceTrash1.ogg" />
+            <file name="spaceTrash4.ogg" />
+            <file name="switch10.ogg" />
+            <file name="select_004.ogg" />
+            <file name="spaceTrash3.ogg" />
+            <file name="switch1.ogg" />
+            <file name="switch12.ogg" />
+            <file name="switch18.ogg" />
+            <file name="switch13.ogg" />
+            <file name="spaceTrash5.ogg" />
+            <file name="switch11.ogg" />
+            <file name="select_008.ogg" />
+            <file name="switch22.ogg" />
+            <file name="switch24.ogg" />
+            <file name="select_007.ogg" />
+            <file name="switch23.ogg" />
+            <file name="switch21.ogg" />
+            <file name="switch19.ogg" />
+            <file name="switch25.ogg" />
+            <file name="switch17.ogg" />
+            <file name="switch15.ogg" />
+            <file name="spaceTrash2.ogg" />
+            <file name="switch2.ogg" />
+            <file name="switch27.ogg" />
+            <file name="switch20.ogg" />
+            <file name="switch28.ogg" />
+            <file name="switch14.ogg" />
+            <file name="switch3.ogg" />
+            <file name="switch34.ogg" />
+            <file name="switch31.ogg" />
+            <file name="switch29.ogg" />
+            <file name="switch26.ogg" />
+            <file name="switch32.ogg" />
+            <file name="phaserUp5.ogg" />
+            <file name="switch30.ogg" />
+            <file name="switch36.ogg" />
+            <file name="switch33.ogg" />
+            <file name="switch4.ogg" />
+            <file name="switch6.ogg" />
+            <file name="switch9.ogg" />
+            <file name="switch5.ogg" />
+            <file name="switch8.ogg" />
+            <file name="switch7.ogg" />
+            <file name="switch_004.ogg" />
+            <file name="switch_002.ogg" />
+            <file name="switch_007.ogg" />
+            <file name="switch_005.ogg" />
+            <file name="threeTone1.ogg" />
+            <file name="switch_001.ogg" />
+            <file name="toggle_002.ogg" />
+            <file name="switch38.ogg" />
+            <file name="switch37.ogg" />
+            <file name="tick_001.ogg" />
+            <file name="toggle_001.ogg" />
+            <file name="toggle_004.ogg" />
+            <file name="tick_004.ogg" />
+            <file name="threeTone2.ogg" />
+            <file name="twoTone1.ogg" />
+            <file name="zap1.ogg" />
+            <file name="toggle_003.ogg" />
+            <file name="switch_006.ogg" />
+            <file name="twoTone2.ogg" />
+            <file name="zap2.ogg" />
+            <file name="zapThreeToneUp.ogg" />
+            <file name="tick_002.ogg" />
+            <file name="switch_003.ogg" />
+            <file name="tone1.ogg" />
+            <file name="zapThreeToneDown.ogg" />
+            <file name="switch35.ogg" />
+            <file name="zapTwoTone2.ogg" />
+            <file name="select_003.ogg" />
+            <file name="zapTwoTone.ogg" />
+        </sound-folder>
+    </sounds-folder>
+    <music-folder>
+        <file name="music (1).m4a" />
+        <file name="music (1).ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="Background main.png" />
+    </files-folder>
+</c2project>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="1">Opening</layout>
+        <layout order="2">Main</layout>
+        <layout order="3">Belajar</layout>
+        <layout order="4">Surah</layout>
+        <layout order="5">HurufHijaiyah</layout>
+        <layout order="6">Bermain</layout>
+        <layout order="7">DragnDrop</layout>
+        <layout order="8">QuizSurah</layout>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Text/" />
+        <folder expanded="1" path="object-folder/button/" />
+        <folder expanded="1" path="object-folder/surah/" />
+        <folder expanded="1" path="object-folder/system/" />
+        <folder expanded="1" path="object-folder/system/Response/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="sound-folder/Surah/" />
+        <folder expanded="0" path="sound-folder/Soundpack/" />
+        <folder expanded="1" path="animation-folder/backbutton/" />
+        <folder expanded="1" path="animation-folder/closebutton/" />
+        <folder expanded="1" path="animation-folder/halawalbutton/" />
+        <folder expanded="1" path="animation-folder/bermainbutton/" />
+        <folder expanded="1" path="animation-folder/belajarbutton/" />
+        <folder expanded="1" path="animation-folder/soundbutton/" />
+        <folder expanded="1" path="animation-folder/tentangbutton/" />
+        <folder expanded="1" path="animation-folder/Hurufhijaiyahbutton2/" />
+        <folder expanded="1" path="animation-folder/Hurufhijaiyahbutton/" />
+        <folder expanded="1" path="animation-folder/dragndropbutton/" />
+        <folder expanded="1" path="animation-folder/tebaksurahbutton/" />
+        <folder expanded="1" path="animation-folder/LeftArrow/" />
+        <folder expanded="1" path="animation-folder/Play/" />
+        <folder expanded="1" path="animation-folder/RightArrow/" />
+        <folder expanded="1" path="animation-folder/Sound/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/mainbackground/" />
+        <folder expanded="1" path="animation-folder/Blackscreen/" />
+        <folder expanded="1" path="animation-folder/bgwhitein/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/container/" />
+        <folder expanded="1" path="animation-folder/Huruf_container_putih/" />
+        <folder expanded="1" path="animation-folder/pengalihID/" />
+        <folder expanded="1" path="animation-folder/pengalihSoalRandom/" />
+        <folder expanded="1" path="animation-folder/levelCopy/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/bgwhiteout/" />
+        <folder expanded="1" path="animation-folder/c/" />
+        <folder expanded="1" path="animation-folder/Check/" />
+        <folder expanded="1" path="animation-folder/Cross/" />
+        <folder expanded="1" path="animation-folder/Huruf_container_hitam/" />
+    </folders-expanded>
+</c2uistate>

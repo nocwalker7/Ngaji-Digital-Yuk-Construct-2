@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>DragnDrop Sheet</name>
+    <events>
+        <comment>Data Global</comment>
+        <variable constant="0" name="JawabanSalah1" sid="110333436948984" static="0" type="number">0</variable>
+        <variable constant="0" name="JawabanSalah2" sid="167678343492880" static="0" type="number">0</variable>
+        <variable constant="0" name="JawabanBenar" sid="581686980774784" static="0" type="number">0</variable>
+        <variable constant="0" name="AcakSoal" sid="745988563306711" static="0" type="number">3</variable>
+        <variable constant="0" name="AcakPosition" sid="911866104368778" static="0" type="number">3</variable>
+        <comment>Tombol</comment>
+        <event-block sid="689437064950192">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="341420564485088" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">backbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="951618695107180" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="914916957713465" type="System">
+                    <param id="0" name="Layout">Bermain</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="258079660234056">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="814747879205927" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">halawalbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="657077244718776" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="750058519213172" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Opening</comment>
+        <event-block sid="669200707549355">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="726611027063216" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="659690107706429" type="pengalihSoalRandom" />
+                <action id="-21" name="Reset global variables" sid="798638180922534" type="System" />
+            </actions>
+            <sub-events>
+                <variable constant="0" name="LocalID" sid="267950336294124" static="0" type="number">0</variable>
+                <event-block sid="350698301202103">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="440661119277813" type="System">
+                            <param id="0" name="Count">28</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="614455810072477" type="System">
+                            <param id="0" name="Object to create">pengalihSoalRandom</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">-100</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="529648280707198" type="pengalihSoalRandom">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Value">LocalID</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="121651330427873" type="System">
+                            <param id="0" name="Variable">LocalID</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="720714647349155">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="171353948490850" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Posisi Huruf Awal</comment>
+                <event-block sid="739632591845099">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="276873553620217" type="System">
+                            <param id="0" name="Variable">AcakSoal</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="703959663737368">
+                            <conditions>
+                                <condition id="-16" name="Pick random instance" sid="589575654672740" type="System">
+                                    <param id="0" name="Object">pengalihID</param>
+                                </condition>
+                                <condition id="-16" name="Pick random instance" sid="501819429265012" type="System">
+                                    <param id="0" name="Object">Huruf_container_putih</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="867848033207021" type="Huruf_container_putih">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="118307065809324" type="Huruf_container_putih">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Value">pengalihID.id</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="996610905288140" type="System">
+                                    <param id="0" name="Variable">AcakSoal</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="945588026163125" type="pengalihID" />
+                                <action id="5" name="Set frame" sid="551446171233914" type="Huruf_container_putih">
+                                    <param id="0" name="Frame number">Self.id</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="246256172491168">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="883761758524788" type="Huruf_container_putih">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="572420986113938" type="Huruf_container_putih">
+                                            <param id="0" name="X">186</param>
+                                            <param id="1" name="Y">236</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="284583162613195">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="581429241611427" type="Huruf_container_putih">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="742712227204291" type="Huruf_container_putih">
+                                            <param id="0" name="X">186</param>
+                                            <param id="1" name="Y">426</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="725164903050675">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="161655989878988" type="Huruf_container_putih">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="578228851017372" type="Huruf_container_putih">
+                                            <param id="0" name="X">186</param>
+                                            <param id="1" name="Y">620</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Pengacak Posisi</comment>
+                <event-block sid="493796661994897">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="920902644917760" type="System">
+                            <param id="0" name="Variable">AcakPosition</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="948141577444551">
+                            <conditions>
+                                <condition id="-16" name="Pick random instance" sid="333459444831821" type="System">
+                                    <param id="0" name="Object">pengalihSoalRandom</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="785171880443470">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="301853696507992" type="System">
+                                            <param id="0" name="Variable">AcakPosition</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="620909307205474" type="System">
+                                            <param id="0" name="Variable">JawabanBenar</param>
+                                            <param id="1" name="Value">pengalihSoalRandom.ID</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="524231270937506">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="215515703302759" type="System">
+                                            <param id="0" name="Variable">AcakPosition</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="972145750483609" type="System">
+                                            <param id="0" name="Variable">JawabanSalah1</param>
+                                            <param id="1" name="Value">pengalihSoalRandom.ID</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="808390240794997">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="837729420809994" type="System">
+                                            <param id="0" name="Variable">AcakPosition</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="674991321651213" type="System">
+                                            <param id="0" name="Variable">JawabanSalah2</param>
+                                            <param id="1" name="Value">pengalihSoalRandom.ID</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="599933018436793">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="970747549691031" type="pengalihSoalRandom" />
+                                        <action id="-11" name="Subtract from" sid="646694107969406" type="System">
+                                            <param id="0" name="Variable">AcakPosition</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Lokasi Jawaban Akhir</comment>
+        <event-block sid="812045707487391">
+            <conditions />
+            <actions>
+                <action id="5" name="Set frame" sid="250992190683836" type="Huruf_container_hitam">
+                    <param id="0" name="Frame number">JawabanBenar</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="781312144513225">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="759926536365791" type="Huruf_container_putih">
+                            <param id="0" name="Unique ID">31</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="691430248729697" type="Huruf_container_putih">
+                            <param id="0" name="Frame number">JawabanBenar</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="827378449819750">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="214129653740660" type="Huruf_container_putih">
+                            <param id="0" name="Unique ID">33</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="759031196581759" type="Huruf_container_putih">
+                            <param id="0" name="Frame number">JawabanSalah1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="116533166531440">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="264816615603287" type="Huruf_container_putih">
+                            <param id="0" name="Unique ID">34</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="584591833186467" type="Huruf_container_putih">
+                            <param id="0" name="Frame number">JawabanSalah2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="482248312637965">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="176875191168765" type="Huruf_container_putih" />
+            </conditions>
+            <actions>
+                <action id="-24" name="Move to top" sid="247273308476788" type="Huruf_container_putih" />
+            </actions>
+        </event-block>
+        <comment>Animasi</comment>
+        <event-block sid="653639763494488">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="555555352944641" type="Huruf_container_putih" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="515982714947836">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="405188048264104" type="Huruf_container_putih">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="608507365045339">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="313450945897053" type="Huruf_container_putih">
+                                    <param id="0" name="Object">Huruf_container_hitam</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="153925318966615">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="566791716465371" type="Huruf_container_putih">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">JawabanBenar</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="AnimPosition" id="10" name="Start" sid="991436773165291" type="Huruf_container_putih">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="429276790115185" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_container_hitam.X</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="808314477913224" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_container_hitam.Y</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="10" name="Start" sid="799684575864340" type="Huruf_container_putih">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="3" name="Set target" sid="555354570491572" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_container_hitam.Width</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="3" name="Set target" sid="568444317208385" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_container_hitam.Height</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="662130307745855" type="Huruf_container_putih">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="301134478476570" type="Function">
+                                            <param id="0" name="Name">&quot;Finish&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="202188409967839">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="270386542099700" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="AnimPosition" id="10" name="Start" sid="560104796745569" type="Huruf_container_putih">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="889084227220701" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">186</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="619079142723087" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">236</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="434731712498971">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="662943228000188" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="AnimPosition" id="10" name="Start" sid="444031742017067" type="Huruf_container_putih">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="AnimPosition" id="3" name="Set target" sid="196806761318989" type="Huruf_container_putih">
+                                    <param id="0" name="Target is">0</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">186</param>
+                                </action>
+                                <action behavior="AnimPosition" id="3" name="Set target" sid="700955853532871" type="Huruf_container_putih">
+                                    <param id="0" name="Target is">1</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">236</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="231948755574921">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="608877430904730" type="Huruf_container_putih">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="314677274675998">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="312802352964179" type="Huruf_container_putih">
+                                    <param id="0" name="Object">Huruf_container_hitam</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="858327997221999">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="443907782867941" type="Huruf_container_putih">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">JawabanBenar</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="AnimPosition" id="10" name="Start" sid="618786303341369" type="Huruf_container_putih">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="919444089908029" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_container_hitam.X</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="845605405270080" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_container_hitam.Y</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="10" name="Start" sid="719908025277877" type="Huruf_container_putih">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="3" name="Set target" sid="437632213385037" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_container_hitam.Width</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="3" name="Set target" sid="591907608235475" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_container_hitam.Height</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="166636228743428" type="Huruf_container_putih">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="105492881250769" type="Function">
+                                            <param id="0" name="Name">&quot;Finish&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="314329015586114">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="734376921220994" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="AnimPosition" id="10" name="Start" sid="298718137156424" type="Huruf_container_putih">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="551027275459896" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">186</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="742886056457794" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">426</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="442565722111203">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="627448639028512" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="AnimPosition" id="10" name="Start" sid="952168051283852" type="Huruf_container_putih">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="AnimPosition" id="3" name="Set target" sid="785988567234282" type="Huruf_container_putih">
+                                    <param id="0" name="Target is">0</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">186</param>
+                                </action>
+                                <action behavior="AnimPosition" id="3" name="Set target" sid="870591534140744" type="Huruf_container_putih">
+                                    <param id="0" name="Target is">1</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">426</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="998176227859111">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="124780735941967" type="Huruf_container_putih">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="299038371595641">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="452899339467082" type="Huruf_container_putih">
+                                    <param id="0" name="Object">Huruf_container_hitam</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="494941632040081">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="936733336718410" type="Huruf_container_putih">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">JawabanBenar</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="AnimPosition" id="10" name="Start" sid="955198311101080" type="Huruf_container_putih">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="851320807552998" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_container_hitam.X</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="352859136523955" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_container_hitam.Y</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="10" name="Start" sid="642978458301943" type="Huruf_container_putih">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="3" name="Set target" sid="527990156864388" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_container_hitam.Width</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="3" name="Set target" sid="906162068840811" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_container_hitam.Height</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="431244392098911" type="Huruf_container_putih">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="161921447091835" type="Function">
+                                            <param id="0" name="Name">&quot;Finish&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="971946008222556">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="205755164654603" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="AnimPosition" id="10" name="Start" sid="705046411115151" type="Huruf_container_putih">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="784974846181987" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">186</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="177508357725434" type="Huruf_container_putih">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">620</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="661104852152626">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="851793672566506" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="AnimPosition" id="10" name="Start" sid="133998204246972" type="Huruf_container_putih">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="AnimPosition" id="3" name="Set target" sid="607137044729719" type="Huruf_container_putih">
+                                    <param id="0" name="Target is">0</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">186</param>
+                                </action>
+                                <action behavior="AnimPosition" id="3" name="Set target" sid="705259903541275" type="Huruf_container_putih">
+                                    <param id="0" name="Target is">1</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">620</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Selesai</comment>
+        <event-block sid="510222318025765">
+            <conditions>
+                <condition id="0" name="On function" sid="588211698411196" type="Function">
+                    <param id="0" name="Name">&quot;Finish&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="630737922762747" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="446886963951640" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

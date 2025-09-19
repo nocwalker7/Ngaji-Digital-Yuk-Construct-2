@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>QuizSurah Sheet</name>
+    <events>
+        <variable constant="0" name="GameMulai" sid="341817525837711" static="0" type="number">1</variable>
+        <variable constant="0" name="JawabanSoalS" sid="688255739708615" static="0" type="number">0</variable>
+        <variable constant="0" name="IDGame" sid="527063991219729" static="0" type="number">0</variable>
+        <variable constant="0" name="Pilihan" sid="446557630196620" static="0" type="number">0</variable>
+        <event-block sid="482764188001776">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="534826878221775" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="929861913469028" type="Check">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="746328244916864" type="Cross">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Call function" sid="385108281448038" type="Function">
+                    <param id="0" name="Name">&quot;SetDataSurah&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="367539581668844" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Call function" sid="493446610105838" type="Function">
+                    <param id="0" name="Name">&quot;SetDataRandomSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="184498346603893" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Call function" sid="886089380907422" type="Function">
+                    <param id="0" name="Name">&quot;SetSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="33" name="Stop all" sid="112174719611670" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="164251784665680">
+            <conditions>
+                <condition id="0" name="On function" sid="308163916436118" type="Function">
+                    <param id="0" name="Name">&quot;SetDataSurah&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Clear" sid="510472045173916" type="Data_Surah" />
+                <action id="1" name="Set size" sid="646446222097436" type="Data_Surah">
+                    <param id="0" name="Width">14</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+                <action id="2" name="Set at X" sid="421639338595375" type="Data_Surah">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">&quot;Al-Fatihah&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="538981850414989" type="Data_Surah">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">&quot;An-Nas&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="159896859786850" type="Data_Surah">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">&quot;Al-Falaq&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="902307036334634" type="Data_Surah">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Value">&quot;Al-Ikhlas&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="702326615081753" type="Data_Surah">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Value">&quot;Al-Lahab&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="207745828948781" type="Data_Surah">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Value">&quot;An-Nasr&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="212820496300985" type="Data_Surah">
+                    <param id="0" name="X">6</param>
+                    <param id="1" name="Value">&quot;Al-Kafirun&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="925947052144714" type="Data_Surah">
+                    <param id="0" name="X">7</param>
+                    <param id="1" name="Value">&quot;Al-Kautsar&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="511989354759982" type="Data_Surah">
+                    <param id="0" name="X">8</param>
+                    <param id="1" name="Value">&quot;Al-Ma&apos;un&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="915991431677313" type="Data_Surah">
+                    <param id="0" name="X">9</param>
+                    <param id="1" name="Value">&quot;Al-Quraisy&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="392580402767135" type="Data_Surah">
+                    <param id="0" name="X">10</param>
+                    <param id="1" name="Value">&quot;Al-Fil&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="970665252422036" type="Data_Surah">
+                    <param id="0" name="X">11</param>
+                    <param id="1" name="Value">&quot;Al-Humazah&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="937661393046504" type="Data_Surah">
+                    <param id="0" name="X">12</param>
+                    <param id="1" name="Value">&quot;Al-Asr&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="179452576510309" type="Data_Surah">
+                    <param id="0" name="X">13</param>
+                    <param id="1" name="Value">&quot;At-Takatsur&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="734487768907529">
+            <conditions>
+                <condition id="0" name="On function" sid="547680949150330" type="Function">
+                    <param id="0" name="Name">&quot;SetDataRandomSoal&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Clear" sid="719093685649348" type="dataacak" />
+                <action id="1" name="Set size" sid="325740914588882" type="dataacak">
+                    <param id="0" name="Width">4</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <variable constant="0" name="rand" sid="574567210008657" static="0" type="number">0</variable>
+                <event-block sid="275644562707729">
+                    <conditions>
+                        <condition id="-10" name="For" sid="770767718884434" type="System">
+                            <param id="0" name="Name">&quot;randomsoal&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="593040271174862" type="System">
+                            <param id="0" name="Variable">rand</param>
+                            <param id="1" name="Value">int(random(1,Data_Surah.Width+1))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="927896910469509">
+                            <conditions>
+                                <condition id="-23" name="While" sid="477038562410897" type="System" />
+                                <condition id="5" name="Contains value" sid="658666871334745" type="dataacak">
+                                    <param id="0" name="Value">rand</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="885066097010105" type="System">
+                                    <param id="0" name="Variable">rand</param>
+                                    <param id="1" name="Value">int(random(1,Data_Surah.Width+1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="179667150030553">
+                            <conditions />
+                            <actions>
+                                <action id="2" name="Set at X" sid="161708618406353" type="dataacak">
+                                    <param id="0" name="X">loopindex(&quot;randomsoal&quot;)</param>
+                                    <param id="1" name="Value">rand</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="620730878632972">
+            <conditions>
+                <condition id="0" name="On function" sid="939889998249670" type="Function">
+                    <param id="0" name="Name">&quot;SetSoal&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="924042372084838" type="System">
+                    <param id="0" name="Variable">JawabanSoalS</param>
+                    <param id="1" name="Value">dataacak.At(0) - 1</param>
+                </action>
+                <action id="-9" name="Set value" sid="187725541923254" type="System">
+                    <param id="0" name="Variable">Pilihan</param>
+                    <param id="1" name="Value">choose(1,2,3,4)</param>
+                </action>
+                <action id="5" name="Set frame" sid="767704039043007" type="Sprite4">
+                    <param id="0" name="Frame number">JawabanSoalS</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="337409829887471">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="388789090552844" type="System">
+                            <param id="0" name="Variable">Pilihan</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="449052631448013">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="995603746427563" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">59</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="459649571617327" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(0)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="113949815361799">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="654451821033991" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">67</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="570156156475079" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(1)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="979360507281209">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="719229573118419" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">68</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="933492701373660" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(2)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="999775780997870">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="609445148023655" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">69</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="849226422536834" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(3)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="528150436038693">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="873032233073281" type="System">
+                            <param id="0" name="Variable">Pilihan</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="533593820717684">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="313754198728544" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">59</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="976645486085157" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(1)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="623733555206097">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="890252687485096" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">67</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="876887847739164" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(0)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="775915340938127">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="140260034071783" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">68</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="138544758379036" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(3)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="641406280963584">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="486209099795352" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">69</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="315497275108805" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(2)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="726926309358797">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="672354654078409" type="System">
+                            <param id="0" name="Variable">Pilihan</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="571102712749656">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="571628659591157" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">59</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="294510572599546" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(2)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="862060268950810">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="894104768900200" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">67</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="752613414817614" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(3)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="726864839042972">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="929286139835981" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">68</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="208971661012523" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(0)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="294067272350798">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="360012082746399" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">69</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="712671505496365" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(1)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="185381288436127">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="462178843933634" type="System">
+                            <param id="0" name="Variable">Pilihan</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="171612446182457">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="730152349888344" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">59</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="830435235448406" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(1)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="645253272109828">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="624123811904181" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">67</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="281270362052649" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(2)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="431726839692305">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="611233285595568" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">68</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="357636253328911" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(3)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="165570594353732">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="125833965377574" type="SpriteFont2">
+                                    <param id="0" name="Unique ID">69</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="512170530747422" type="SpriteFont2">
+                                    <param id="0" name="Text">Data_Surah.At(int(dataacak.At(0)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="452560401973032">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="567418679796083" type="System">
+                    <param id="0" name="Variable">GameMulai</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="660011668014462">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="531110168417078" type="Touch">
+                            <param id="0" name="Object">SpriteFont2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="303783263844025" type="SpriteFont2">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">999</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="244373785065294">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="824008609792411" type="SpriteFont2">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Pilihan</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="847454577199203" type="Check">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="140493851836536" type="Check" />
+                                <action id="-16" name="Wait" sid="422957022994748" type="System">
+                                    <param id="0" name="Seconds">3</param>
+                                </action>
+                                <action id="0" name="Call function" sid="914036109818019" type="Function">
+                                    <param id="0" name="Name">&quot;Finish&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="291855284577941">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="552885438080504" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="160316644170205" type="Cross">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="364943170806009" type="Cross" />
+                                <action id="-16" name="Wait" sid="921670269000222" type="System">
+                                    <param id="0" name="Seconds">3</param>
+                                </action>
+                                <action id="0" name="Call function" sid="987740281746226" type="Function">
+                                    <param id="0" name="Name">&quot;Finish&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="292792967658978">
+            <conditions>
+                <condition id="17" name="On tap object" sid="557320981935338" type="Touch">
+                    <param id="0" name="Object">backbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="403410417839469" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="112913868798388" type="System">
+                    <param id="0" name="Layout">Bermain</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="946739062661557">
+            <conditions>
+                <condition id="17" name="On tap object" sid="677618158504194" type="Touch">
+                    <param id="0" name="Object">halawalbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="516815624432887" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="173235652989112" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="275267923986257">
+            <conditions>
+                <condition id="0" name="On function" sid="406302195989972" type="Function">
+                    <param id="0" name="Name">&quot;Finish&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="343385930498616" type="Function">
+                    <param id="0" name="Name">&quot;SetDataRandomSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="733261640153534" type="Function">
+                    <param id="0" name="Name">&quot;SetSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-26" name="Restart layout" sid="668090897286246" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

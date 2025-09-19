@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>HurufHijaiyah Sheet</name>
+    <events>
+        <variable constant="0" name="Hijaiyah" sid="699272019423412" static="0" type="number">0</variable>
+        <event-block sid="634814816459946">
+            <conditions>
+                <condition id="0" name="On function" sid="693795513538564" type="Function">
+                    <param id="0" name="Name">&quot;change-text&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="755244194043918">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="746505654249115" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="317842557835147" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Alif&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="317059360711705">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="873883324497502" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="115327161341881" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Ba&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="357998814807607">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="566106902404305" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="888351779757897" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Ta&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="700889792877160">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="273978570782927" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="939961848989912" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Tsa&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="751228477903590">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="647516029210369" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="584127600271229" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Jim&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="345668650633684">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="581432952792571" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="392667589190947" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Kha&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="814060498943958">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="768900134033565" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="406441833517917" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Kho&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="762522879903094">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="330650475551631" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="209687964186462" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Dal&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="923013279811119">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="382985716270477" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="573280657940783" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Dzal&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="108174596232411">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="913442672733983" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="138053761764016" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Ra&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="572395053605808">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="630592577770781" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="562828205543405" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Za&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="741757232406592">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="363548832584848" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="856265663124210" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Sin&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="116944592119844">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="942976966340018" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="723265109711108" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Syin&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="253701608592429">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="845991655513924" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="503524302373174" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Shat&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="579670278748937">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="149944889271103" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="493749960192222" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Dhat&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="422251148699598">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="616152392557014" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="195382274034806" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Tha&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="597354748312722">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="300855410531420" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="123836204586489" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Dha&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="255042710750310">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="928656838055066" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">17</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="826745194447753" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;&apos;Ain&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="296691663461685">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="322439802609813" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">18</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="801986892790866" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Ghin&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="821625228502484">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="247071662061246" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">19</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="864949552725657" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Fa&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="706886042383232">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="422483298232924" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="814702637871122" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Qaf&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="334705267771561">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="422597129975826" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">21</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="166824750567216" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Kaf&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="998132190783449">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="249745915697856" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">22</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="888675584482515" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Lam&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="806681186396244">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="916025254640630" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">23</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="447757828935319" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Mim&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="977399277156738">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="714555771909585" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">24</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="448552218791023" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Nun&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="408376456977863">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="457392617239800" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="265985426761223" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Wau&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="849332241934043">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="563281940427692" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">26</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="982305343130100" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Ha&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="605994701968990">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="181840722996605" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">27</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="143737666193885" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;Ya&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="872395022689231">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="597667418037236" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="600912209546027" type="Huruf_container_putih">
+                    <param id="0" name="Frame number">Hijaiyah</param>
+                </action>
+                <action id="33" name="Stop all" sid="778815109001653" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="948359036478674">
+            <conditions>
+                <condition id="0" name="On function" sid="494136872198552" type="Function">
+                    <param id="0" name="Name">&quot;kiri&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="504002996136592">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="311496164980706" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="734165939112738" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Value">27</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="822018844381509">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="709554833340688" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="573993037479742" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="888235724071152">
+                    <conditions />
+                    <actions>
+                        <action id="5" name="Set frame" sid="180069266551855" type="Huruf_container_putih">
+                            <param id="0" name="Frame number">Hijaiyah</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="730069084920246">
+            <conditions>
+                <condition id="0" name="On function" sid="252594188067931" type="Function">
+                    <param id="0" name="Name">&quot;kanan&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="145238341230497">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="912448571885830" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">28</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="913317024812529" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="658341199059291">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="410012700113188" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="744198203361940" type="System">
+                            <param id="0" name="Variable">Hijaiyah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="664984524000812">
+                    <conditions />
+                    <actions>
+                        <action id="5" name="Set frame" sid="679035574892472" type="Huruf_container_putih">
+                            <param id="0" name="Frame number">Hijaiyah</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="458918159452342" title="touch event2">
+            <sub-events>
+                <event-block sid="264327155840120">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="432511311965050" type="Touch">
+                            <param id="0" name="Object">LeftArrow</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="770345692895976" type="Function">
+                            <param id="0" name="Name">&quot;kiri&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="497203312274120" type="Function">
+                            <param id="0" name="Name">&quot;change-text&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="165739547429500">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="828249375479023" type="Touch">
+                            <param id="0" name="Object">RightArrow</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="651517208560628" type="Function">
+                            <param id="0" name="Name">&quot;kanan&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="599908327214764" type="Function">
+                            <param id="0" name="Name">&quot;change-text&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="471365843713485">
+            <conditions>
+                <condition id="17" name="On tap object" sid="824721790774148" type="Touch">
+                    <param id="0" name="Object">backbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="462378892917029" type="Audio">
+                    <param id="0" name="Audio file">music (1)</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;opensong&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="439437141189166" type="System">
+                    <param id="0" name="Layout">Belajar</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="672638102660479">
+            <conditions>
+                <condition id="17" name="On tap object" sid="889783139713698" type="Touch">
+                    <param id="0" name="Object">halawalbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="870528730710408" type="Audio">
+                    <param id="0" name="Audio file">music (1)</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;opensong&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="632185491235753" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
